@@ -1,0 +1,275 @@
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  margin: 23px 8vw 64px 8vw;
+  align-items: center;
+}
+
+.nav-bar > div:nth-child(1) {
+  width: 40px;
+  height: 40px;
+  background-color: #f16718;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+}
+
+.nav-bar > div:nth-child(2) {
+  width: 150px;
+  height: 48px;
+  background-color: #e8eff2;
+  color: black;
+  border-radius: 8px;
+  line-height: 48px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.nav-bar > div:nth-child(2):hover {
+  background-color: #162542;
+  color: white;
+}
+
+/*
+გადავდივართ მეორე დივის სტილიზაციაზე, რომელიც
+TYPEMASTER-ით გვაქვს დისფლეიზე
+*/
+
+.info-section-header {
+  max-width: 330px;
+  margin: 0 auto;
+
+  display: block;
+}
+
+.info-section-header > h1 {
+  margin-bottom: 32px;
+  font-size: 56px;
+}
+
+.info-section-header > p {
+  margin-bottom: 32px;
+  font-size: 18px;
+  width: 330px;
+}
+
+.info-section-header-div {
+  display: flex;
+  justify-content: space-between;
+  width: 330px;
+}
+
+.info-section-header-div > div:nth-child(1) {
+  width: 150px;
+  height: 48px;
+  background-color: #f16718;
+  line-height: 48px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.info-section-header-div > div:nth-child(1):hover {
+  background-color: #ff9b62;
+  color: white;
+}
+
+.info-section-header-div > div:nth-child(2) {
+  width: 150px;
+  height: 48px;
+  background-color: white;
+  line-height: 48px;
+  text-align: center;
+}
+
+/*
+მომავალში გამოსაჩენი დივი დესკტოპისთის
+*/
+
+.future-div {
+  display: none;
+}
+
+/*გადავდივართ მესამე ნაწილის სტილიზაციაზე ამ შემთხვევაში დივებით ვერ გავაკეთე და background-image ების საშუალებით გავაკეთებ*/
+
+body {
+  background-image: url("./mobile/image-keyboard.jpg"),
+    url("./mobile/image-phone-and-keyboard.jpg"),
+    url("./mobile/image-glass-and-keyboard.jpg");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 450px 350px, 150px 180px, 150px 180px;
+  background-position: top 450px right -85px, top 830px left -30px,
+    top 830px left 150px;
+}
+
+/*აქ ფოტოები რომ მქონდა ისინი წავშალე*/
+
+/*მეოთხე სექციაა --> */
+
+.section-second {
+  margin: 687px auto 105px auto;
+  max-width: 330px;
+  text-align: center;
+}
+
+/*მეხუთე --> გრიდის სექცია*/
+
+.wrap-div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 365px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.wrap-div > div {
+  display: flex;
+  max-width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.wrap-div > div > img {
+  background-color: #f16718;
+  padding: 25px;
+  border-radius: 16px;
+}
+
+#last-pelement {
+  text-align: center;
+  margin: 96px 0 50px 0;
+}
+
+@media only screen and (min-width: 750px) {
+  body {
+    background-image: url("./mobile/image-keyboard.jpg"),
+      url("./mobile/image-phone-and-keyboard.jpg"),
+      url("./mobile/image-glass-and-keyboard.jpg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 450px 350px, 30vw 40vw, 50vw 40vw;
+    background-position: top 200px right -85px, top 600px left 4vw,
+      top 600px left 40vw;
+  }
+
+  .info-section-header {
+    max-width: 350px;
+    margin: 50px auto 450px 39px;
+    display: inline-block;
+  }
+
+  .section-second {
+    margin: 15vw auto 157px auto;
+    max-width: 750px;
+    text-align: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .section-second > h1 {
+    width: 255px;
+  }
+
+  .section-second > p {
+    width: 400px;
+  }
+
+  .wrap-div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 750px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .wrap-div div {
+    display: flex;
+    max-width: 42%;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: start;
+    margin-right: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (min-width: 1150px) {
+  .info-section-header {
+    margin: 50px auto 120px calc(39px + 5.5vw);
+  }
+
+  .wrap-div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    margin: 0 5vw;
+    justify-content: center;
+  }
+
+  .wrap-div div {
+    display: flex;
+    max-width: 20%;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: start;
+    margin-right: 40px;
+  }
+
+  body {
+    background-image: url("./mobile/image-keyboard.jpg");
+    background-repeat: no-repeat;
+    background-size: 450px 350px;
+    background-position: top 200px right calc(-85px + 15vw);
+  }
+
+  .section-second {
+    display: none;
+  }
+
+  .future-div {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    height: 510px;
+    margin-bottom: 150px;
+  }
+
+  .future-div > div:nth-child(1) {
+    background-color: #f16718;
+    height: 520px;
+    width: 354px;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .future-div > div:nth-child(1) > img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+  }
+
+  .future-div > div:nth-child(2) {
+    width: 35%;
+    border-radius: 16px;
+    overflow: hidden;
+    background-image: url(./mobile/image-glass-and-keyboard.jpg);
+    background-size: 100% 100%;
+    background-position: 0;
+    background-repeat: no-repeat;
+  }
+
+  .future-div > div:nth-child(3) {
+    width: 255px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: start;
+  }
+}
